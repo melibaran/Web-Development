@@ -1,0 +1,26 @@
+.padre-flex{
+    display: flex; /*Pone los elementos uno al lado del otro Vane*/
+    flex-wrap: nowrap; /*para que se mantengan en una linea, pero */
+    flex-wrap: wrap; /*si no hay mas espacio pasa a la linea de abajo*/
+    flex-wrap: wrap-reverse; /*va para el lado contrario*/
+    flex-direction: column;
+    flex-direction: row;
+    flex-flow: column nowrap; /*unir mas corto el column y no wrap*/
+    justify-content:space-around; /*pone distancia en el medio, y n el prinicipio es la mitad*/
+    justify-content: space-between; /*espacio entre todos los elemntos*/
+    justify-self:flex-start; /*lo manda al final*/
+    align-items: stretch; /*se alarga hasta ocupar todo. 
+    LA DIFERENCIA CON JUSTIFY ES Q UNO ALINEA EN EL EJE X Y EL OTRO EN EL EJE Y */ 
+    align-content:center; /*NO funciona si hay una sola linea (si hay nowrap). mueve todo el contenido hacia un lado en el eje y*/
+    align-content: space-around; /*espacio en cada punta en el eje y*/
+    /*LA DERENCIA CON ALIGN-ITEMS ES QUE ESTA ES PARA WRAP Y ALGIN CONTENT PARA NOWRAP
+    TAMBIEN ES Q ALIGN CONTENT MUEVE A TODO EL GRUPO, Y ALIGN CONTENT SOLO A LA LINEA*/
+}
+
+.hijo-flex{
+    order:-1; /*modificar el orden del elemento*/
+
+}
+
+box-shadow: 12px /*poner sombras: https://hype4.academy/tools/glassmorphism-generator*/
+max-width: 70% /*para que el texto no quede muy largo */

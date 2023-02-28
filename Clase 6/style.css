@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*grid container*/
+body{
+    font-family: "Open Sans", "sans-relief";
+    min-height: 100vh;
+    width: 100%;
+    height: 800px;
+    display:grid;
+    grid-template-columns: 300px 200px; /*tamaño de columna*/
+    grid-template-rows: repeat(12, 1fr); /*tamaño de filas. se repite 12 filas en 1fr*/
+    grid-template-areas: 
+    "nav header  header"
+    "nav productos aside"
+    "nav servicios aside"
+    "nav footer footer";
+    grid-template-columns: 150px 1fr 200px;
+    grid-template-rows: 100px 1fr 1fr 10%;
+    column-gap: 15px; /*para q tenga margen*/
+    row-gap: 10px;
+    justify-items: inherit; /* startpara alinearlos al prinicipio. end es al final. initial se extiende hasta
+    ocupar todo el espacio y right o left o strech para estirarlo A TODO. EJE HORIZONTAL*/
+    align-items: initial; /*para pegarlo hacia arriba o abajo A TODO. EJE VERTICAL*/
+    align-content: end ; /*para todo el contenido*/
+/*el justify content y el align content necesitan tener ancho (width) y largo (height) definidio*/
+    grid-row-start:none;
+}
+
+/*con none o un . indicamos q en ese espacio va un espacio vacio*/
+
+
+/*grid items*/
+/*justify self es para un solo item*/
+
+header {
+    background-color: blue;
+    grid-area: header;
+    grid-area: header;
+}
+
+nav {
+    background-color: red;
+    grid-area: nav;
+}
+
+
+section1 {
+    background-color: yellow;
+    grid-area: banner;
+}
+
+section2 {
+    background-color: yellow;
+    grid-area: servicios;
+}
+
+footer {
+    background-color: blue;
+    grid-area: footer;
+}
+
+
+

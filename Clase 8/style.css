@@ -1,0 +1,66 @@
+/* Pseudos: 
+/todos los elementos <a> cuando se hace click sobre ellos*/
+.enlace:active{ 
+    background-color: red;
+}
+
+/*cambio que se ve cuando se posiciona el mouse*/
+.enlace:hover{
+    color:blue;
+}
+
+/*para mostrar que ya fue visitado*/
+.enlace:visited{
+    color: green;
+}
+
+/*muestra si ya apretaste el link*/
+.enlace:link{
+    color:black;
+}
+
+/*sirve mucho para cambiar el color del boton*/
+button{
+    background-color:blue
+}
+
+button:hover{
+    background-color:rgb(104, 133, 133)
+}
+
+/*se aplica a todos menos el elemento que tiene la clase box2*/
+.box:not(.box2){
+    background-color: white;
+}
+
+/*aca solo no se pondria al box que esta en la posicion 2*/
+section .box:nth-child(2){
+    background-color: green;
+}
+
+
+/*validar email:*/
+input[type="email"]:invalid{
+    background:red;
+}
+
+input[type="email"]:valid{
+    background:green;
+}
+
+.producto{
+    border:2px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+.producto__titulo{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.producto--descuento{
+    color: green;
+}
+
+/*IMPORTANTE: overflow-x: hidden; PARA VER QUE SOBRA
+Y Q NO HAYA SCROLL HORIZONTAL*/

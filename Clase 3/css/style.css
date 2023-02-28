@@ -1,0 +1,61 @@
+/*Selectores universales: (para que en ningun lado hayan saltos de lineas)*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color:rgb(195, 111, 111);
+}
+
+/*se puede poner un ID para nombrar algun elemnto de HTML, si se quiere
+poner en el CSS arranca con un #:*/  
+#pieDePagina{
+    background-color: blue;
+}
+
+/*Class es para poner un mismo estilo a varios elementos, se pone un . al principio:*/
+
+.tituloPrincipal{
+    color:aqua;
+}
+
+/* Etiquetas:*/
+a{
+    color:black;
+}   
+
+#servicios h2{
+    color:red;
+}
+
+.card h3 {
+    color: black;
+}
+
+/*si a un mismo elemento le ponemos varios colores, lee el primero de todo. Pero si
+es un ID lee primero ese, despues la class y despues etiqueta (ID?Class>)*/
+
+/*Propiedades:*/
+nav ul  {
+    list-style-type: none; /*se sacan los puntitos de las listas*/
+    background-image:url("../images/")
+    background-repeat: no-repeat; /*para q no se repita la foto*/
+    background-position: right center; 
+    background-size: cover; /*contain se agranda la ft pero no se defomra la foto*/
+}
+
+h1{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 100; /*mas gruesa*/
+    font-style: italic;
+    text-align: right; /*poner el texto para un lado*/
+    text-decoration: none; /*puede servir para sacar el subrayado al enlace*/
+}
+
+/*unidades de medida:
+px= son absolutas.
+rem= es relativa de acuerod  a lo q ponga en HTML (RECOMENDADO)
+%= sabiendo que el 100% es cietos pixeles*/
+

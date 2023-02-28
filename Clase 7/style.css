@@ -1,0 +1,77 @@
+/*@media (min-width:400px) and (max-width:800px)}
+
+el @media sirve como CONDICIONAL en el css para
+que sea responsive en cada dispotivio
+
+320px: celu vertical,
+480px: celu horizontal
+*/
+
+/*SIEMPRE SE ARRANCA DESDE EL MOBILE AL MAS GRANDE*/
+
+body{
+    font-family: "Open Sans", "sans-relief";
+    min-height: 100vh;
+    width: 100%;
+    height: 800px;
+    display:grid;
+    grid-template-columns: auto; /*tamaño de columna*/
+    grid-template-rows: repeat(12, 1fr); /*tamaño de filas. se repite 12 filas en 1fr*/
+    grid-template-areas: 
+    "header"
+    "nav "
+    "section1"
+    "section2"
+    "aside"
+    "footer"
+}
+
+
+
+/*mayores a 768px*/
+@media screen and (min-width:768px) {
+    body {
+        height: 150vh;
+        grid-template-areas: 
+        "nav header"
+        "nav section1"
+        "nav section2"
+        "nav aside"
+        "nav footer";
+        grid-template-columns: 150px auto
+    } 
+}
+
+/*mayores a 1024px*/
+@media screen and (min-width:1024px) {
+    body {
+        grid-template-areas: 
+        "nav header header"
+        "nav section1 aside"
+        "nav section2 aside"
+        "nav footer footer";
+    }
+    aside {
+        background-color: black;
+    }
+    nav{
+    padding-top: 100px;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer{
+        flex-wrap:wrap;
+    }
+    footer div{
+        width: 50%;
+    }
+}
+
+/*meta view port: VER QUE ES*/   
+
+@media screen and (max-width){}
+
+/* outile: 1px solid red; ESTO SIRVE PARA VER QUE COMPONENETE SE ESTA
+ESCAPANDO DEL BODY*/ 
